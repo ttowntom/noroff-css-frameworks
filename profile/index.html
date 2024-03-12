@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/dist/css/index.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"></script>
+		<title>Bootstrap</title>
+	</head>
+	<body>
+		<div class="container-fluid overflow-hidden">
+			<div class="row vh-100 overflow-auto">
+				<header
+					class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex sticky-top">
+					<nav
+						class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-white">
+						<a
+							href="/feed/"
+							class="d-flex align-items-center pb-sm-3 mb-md-0 me-md-auto text-white text-decoration-none">
+							<span class="fs-5"
+								>W<span class="d-none d-sm-inline">hispR</span></span
+							>
+						</a>
+						<ul
+							class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start"
+							id="menu">
+							<li class="nav-item">
+								<a href="/feed/" class="nav-link px-sm-0 px-2">
+									<i class="fs-5 bi-house"></i
+									><span class="ms-1 d-none d-sm-inline">Home</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a
+									href="#"
+									data-bs-toggle="collapse"
+									class="nav-link px-sm-0 px-2">
+									<i class="fs-5 bi-bell-fill"></i
+									><span class="ms-1 d-none d-sm-inline">Notifications</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link px-sm-0 px-2">
+									<i class="fs-5 bi-search"></i
+									><span class="ms-1 d-none d-sm-inline">Explore</span></a
+								>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link px-sm-0 px-2">
+									<i class="fs-5 bi-star-fill"></i
+									><span class="ms-1 d-none d-sm-inline">Favorites</span></a
+								>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link px-sm-0 px-2">
+									<i class="fs-5 bi-envelope-fill"></i
+									><span class="ms-1 d-none d-sm-inline">Messages</span></a
+								>
+							</li>
+						</ul>
+						<div
+							class="dropdown py-sm-4 mt-sm-auto ms-auto ms-sm-0 flex-shrink-1">
+							<a
+								href="#"
+								class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+								id="dropdownUser"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+								<img
+									src="https://avatars.githubusercontent.com/u/117744552?s=48&v=4"
+									alt="ttowntom"
+									width="28"
+									height="28"
+									class="rounded-circle" />
+								<span class="d-none d-sm-inline mx-1">tTownTom</span>
+							</a>
+							<ul
+								class="dropdown-menu dropdown-menu-dark text-small shadow"
+								aria-labelledby="dropdownUser">
+								<li><a class="dropdown-item" href="#">New post...</a></li>
+								<li><a class="dropdown-item" href="#">Settings</a></li>
+								<li><a class="dropdown-item" href="/profile/">Profile</a></li>
+								<li>
+									<hr class="dropdown-divider" />
+								</li>
+								<li><a class="dropdown-item" href="/">Sign out</a></li>
+							</ul>
+						</div>
+					</nav>
+				</header>
+				<div class="col d-flex flex-column h-sm-100">
+					<main class="row overflow-auto">
+						<div class="col pt-4">
+							<section>
+								<h2>Profile</h2>
+								<p>This is where the top section content will be</p>
+							</section>
+							<hr />
+							<section>
+								<h3>Feed...</h3>
+								<p>This is where the cards will go</p>
+							</section>
+						</div>
+					</main>
+					<footer class="row bg-light py-4 mt-auto">
+						<div class="col">Footer content here...</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
