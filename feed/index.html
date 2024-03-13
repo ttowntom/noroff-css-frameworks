@@ -12,56 +12,62 @@
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"></script>
-		<title>Bootstrap</title>
+		<title>Home feed | WhispR</title>
 	</head>
 	<body>
-		<div class="container-fluid overflow-hidden">
+		<div class="container-lg overflow-hidden">
 			<div class="row vh-100 overflow-auto">
 				<header
-					class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex sticky-top">
+					class="col-12 col-sm-4 col-md-3 col-xl-2 px-sm-2 px-0 bg-w-green bg-gradient d-flex sticky-top">
 					<nav
-						class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-white">
+						class="d-flex flex-sm-column flex-row flex-grow-1 align-items-sm-start px-3 pt-2 text-w-white">
 						<a
 							href="/feed/"
-							class="d-flex align-items-center pb-sm-3 mb-md-0 me-md-auto text-white text-decoration-none">
-							<span class="fs-5"
+							class="d-flex pb-sm-3 mb-md-0 me-md-auto text-w-white text-decoration-none fw-bold">
+							<span class="display-6"
 								>W<span class="d-none d-sm-inline">hispR</span></span
 							>
 						</a>
 						<ul
-							class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start"
+							class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-sm-start"
 							id="menu">
 							<li class="nav-item">
-								<a href="/feed/" class="nav-link px-sm-0 px-2">
-									<i class="fs-5 bi-house"></i
-									><span class="ms-1 d-none d-sm-inline">Home</span>
+								<a href="/feed/" class="nav-link px-sm-0 px-2 text-w-white">
+									<i class="fs-5 text-w-white bi-house-fill"></i
+									><span class="ms-3 d-none d-sm-inline fw-bold">Home</span>
 								</a>
 							</li>
 							<li class="nav-item">
 								<a
 									href="#"
 									data-bs-toggle="collapse"
-									class="nav-link px-sm-0 px-2">
-									<i class="fs-5 bi-bell-fill"></i
-									><span class="ms-1 d-none d-sm-inline">Notifications</span>
+									class="nav-link px-sm-0 px-2 text-w-white">
+									<i class="fs-5 text-w-green-dark bi-bell-fill"></i
+									><span class="ms-3 d-none d-sm-inline">Notifications</span>
 								</a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link px-sm-0 px-2">
-									<i class="fs-5 bi-search"></i
-									><span class="ms-1 d-none d-sm-inline">Explore</span></a
+								<a
+									href="#"
+									class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover px-sm-0 px-2 text-w-white">
+									<i class="fs-5 text-w-green-dark bi-binoculars-fill"></i
+									><span class="ms-3 d-none d-sm-inline">Explore</span></a
 								>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link px-sm-0 px-2">
-									<i class="fs-5 bi-star-fill"></i
-									><span class="ms-1 d-none d-sm-inline">Favorites</span></a
+								<a
+									href="#"
+									class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover px-sm-0 px-2 text-w-white">
+									<i class="fs-5 text-w-green-dark bi-star-fill"></i
+									><span class="ms-3 d-none d-sm-inline">Favorites</span></a
 								>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link px-sm-0 px-2">
-									<i class="fs-5 bi-envelope-fill"></i
-									><span class="ms-1 d-none d-sm-inline">Messages</span></a
+								<a
+									href="#"
+									class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover px-sm-0 px-2 text-w-white">
+									<i class="fs-5 text-w-green-dark bi-envelope-fill"></i
+									><span class="ms-3 d-none d-sm-inline">Messages</span></a
 								>
 							</li>
 						</ul>
@@ -82,7 +88,7 @@
 								<span class="d-none d-sm-inline mx-1">tTownTom</span>
 							</a>
 							<ul
-								class="dropdown-menu dropdown-menu-dark text-small shadow"
+								class="dropdown-menu bg-w-white text-small shadow"
 								aria-labelledby="dropdownUser">
 								<li><a class="dropdown-item" href="#">New post...</a></li>
 								<li><a class="dropdown-item" href="#">Settings</a></li>
@@ -95,7 +101,7 @@
 						</div>
 					</nav>
 				</header>
-				<div class="col d-flex flex-column h-sm-100">
+				<div class="col d-flex flex-column h-sm-100 bg-w-desert">
 					<main class="row overflow-auto">
 						<div class="col pt-4">
 							<section>
@@ -109,8 +115,10 @@
 							</section>
 						</div>
 					</main>
-					<footer class="row bg-light py-4 mt-auto">
-						<div class="col">Footer content here...</div>
+					<footer class="row bg-w-dark-light py-2 mt-auto">
+						<div class="col">
+							<p class="text-center text-w-white m-0">&copy; 2024 WhispR</p>
+						</div>
 					</footer>
 				</div>
 			</div>
