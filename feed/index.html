@@ -18,7 +18,7 @@
 				<header
 					class="col-12 col-sm-4 col-md-3 col-xl-2 px-sm-2 px-0 bg-w-green bg-gradient d-flex sticky-top">
 					<nav
-						class="d-flex flex-wrap d-sm-block flex-sm-column flex-row flex-grow-1 align-items-sm-start px-3 pt-2 text-w-white">
+						class="d-flex flex-wrap d-sm-block flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-w-white">
 						<a
 							href="/feed/"
 							class="d-flex pb-sm-3 mb-md-0 me-md-auto text-w-white text-decoration-none fw-bold">
@@ -121,12 +121,21 @@
 											>
 										</div>
 									</div>
-									<form class="d-flex justify-content-end">
-										<input
-											class="form-control bg-w-white"
-											type="search"
-											placeholder="Search.."
-											aria-label="Search" />
+									<form class="justify-content-end">
+										<div class="input-group d-flex">
+											<input
+												type="text"
+												class="form-control form-control-sm bg-w-white"
+												placeholder="Search"
+												aria-label="Search" />
+											<div class="input-group-append">
+												<button
+													class="btn btn-sm btn-outline-w-green"
+													type="button">
+													Search
+												</button>
+											</div>
+										</div>
 									</form>
 								</div>
 							</nav>
