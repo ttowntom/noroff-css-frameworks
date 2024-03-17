@@ -23,7 +23,7 @@
 	"author": "Torgeir Helgesen Riseth <torris51469@stud.noroff.no>",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/ttowntom/noroff-css-frameworksissues"
+		"url": "https://github.com/ttowntom/noroff-css-frameworks#issues"
 	},
 	"homepage": "https://github.com/ttowntom/noroff-css-frameworks#readme",
 	"devDependencies": {
