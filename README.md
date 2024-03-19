@@ -47,6 +47,5 @@ npm install
 To run the app in dev mode, run the following commands:
 
 ```bash
-npm run live
-npm run watch
+npm run dev
 ```
