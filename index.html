@@ -3,15 +3,19 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://kit.fontawesome.com/8d12afa6e5.css"
+			crossorigin="anonymous" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>WhispR</title>
 	</head>
 	<body class="bg-darkBlue font-opensans">
 		<!-- Global container -->
-		<div class="flex items-center justify-center min-h-screen bg-darkBlue">
+		<div class="min-h-screen flex items-center justify-center mx-3 bg-darkBlue">
 			<!-- Card container -->
 			<div
-				class="flex flex-col md:flex-row rounded-2xl shadow-2xl overflow-hidden">
+				class="sm:min-w-[70%] md:min-w-[10%] md:max-w-[900px] md:w-[80%] flex flex-col md:flex-row rounded-2xl shadow-2xl overflow-hidden">
 				<!-- Top/Left side -->
 				<div
 					class="flex flex-col items-center justify-center px-6 py-1 md:py-11 bg-greenPrimary text-white text-center">
@@ -28,23 +32,28 @@
 
 				<!-- Bottom/Right side  -->
 				<div
-					class="flex flex-col items-center justify-center px-6 py-1 md:py-11 bg-desertTan text-center">
+					class="flex flex-grow flex-col items-center justify-center px-12 py-1 md:py-11 bg-desertTan text-center">
 					<h2 class="mt-10 text-greenPrimary font-bold text-3xl">
 						Log in to WhispR
 					</h2>
-					<form class="my-6 md:my-10">
-						<input
-							type="email"
-							name="email"
-							id="email"
-							placeholder="Email"
-							class="w-full my-2 p-2 bg-almostWhite text-darkBlue border border-gray-200 rounded-md focus:outline-none focus:border-greenPrimary placeholder:text-gray-500" />
-						<input
-							type="password"
-							name="password"
-							id="password"
-							placeholder="Password"
-							class="w-full my-2 p-2 bg-almostWhite text-darkBlue border border-gray-200 rounded-md focus:outline-none focus:border-greenPrimary placeholder:text-gray-500" />
+					<form class="w-full my-6 md:my-10">
+						<div
+							class="w-full flex items-center my-2 p-2 text-darkBlue bg-white border border-gray-200 rounded-md group focus-within:border-greenPrimary">
+							<i class="fa-solid fa-envelope text-gray-400"></i>
+							<input
+								type="email"
+								class="pl-2 w-full border-none focus:outline-none"
+								placeholder="Email" />
+						</div>
+						<div
+							class="flex items-center my-2 p-2 text-darkBlue bg-white border border-gray-200 rounded-md group focus-within:border-greenPrimary">
+							<i class="fa-solid fa-lock text-gray-400"></i>
+
+							<input
+								type="password"
+								class="pl-2 w-full border-none focus:outline-none"
+								placeholder="Password" />
+						</div>
 					</form>
 					<a href="#" class="text-gray-500 hover:text-gray-800 underline"
 						>Forgot your password?</a
