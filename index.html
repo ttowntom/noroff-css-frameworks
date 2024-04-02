@@ -6,5 +6,56 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<title>WhispR</title>
 	</head>
-	<body></body>
+	<body class="bg-darkBlue font-opensans">
+		<!-- Global container -->
+		<div class="flex items-center justify-center min-h-screen bg-darkBlue">
+			<!-- Card container -->
+			<div
+				class="flex flex-col md:flex-row rounded-2xl shadow-2xl overflow-hidden">
+				<!-- Top/Left side -->
+				<div
+					class="flex flex-col items-center justify-center px-6 py-1 md:py-11 bg-greenPrimary text-white text-center">
+					<h1 class="mt-10 font-bold text-3xl">Welcome!</h1>
+					<p class="my-6 md:my-10">
+						New to WhispR? <span class="block">Get started by signing up!</span>
+					</p>
+					<a
+						href="#"
+						class="mb-10 py-3 px-6 font-sans border border-almostWhite rounded-full uppercase hover:shadow-xl hover:bg-almostWhite hover:text-greenPrimary">
+						Sign up
+					</a>
+				</div>
+
+				<!-- Bottom/Right side  -->
+				<div
+					class="flex flex-col items-center justify-center px-6 py-1 md:py-11 bg-desertTan text-center">
+					<h2 class="mt-10 text-greenPrimary font-bold text-3xl">
+						Log in to WhispR
+					</h2>
+					<form class="my-6 md:my-10">
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email"
+							class="w-full my-2 p-2 bg-almostWhite text-darkBlue border border-gray-200 rounded-md focus:outline-none focus:border-greenPrimary placeholder:text-gray-500" />
+						<input
+							type="password"
+							name="password"
+							id="password"
+							placeholder="Password"
+							class="w-full my-2 p-2 bg-almostWhite text-darkBlue border border-gray-200 rounded-md focus:outline-none focus:border-greenPrimary placeholder:text-gray-500" />
+					</form>
+					<a href="#" class="text-gray-500 hover:text-gray-800 underline"
+						>Forgot your password?</a
+					>
+					<a
+						href="/profile"
+						class="w-full my-10 py-3 px-5 font-sans bg-greenPrimary shadow-md hover:shadow-xl hover:bg-almostWhite text-almostWhite hover:text-greenPrimary border hover:border-greenPrimary rounded-full uppercase">
+						Log in
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
