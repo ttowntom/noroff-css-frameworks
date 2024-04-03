@@ -7,6 +7,7 @@ module.exports = {
 			colors: {
 				darkBlue: "hsl(217, 28%, 15%)",
 				greenPrimary: "#58ae9c",
+				greenHover: "#4a9181",
 				greenDark: "#274431",
 				desertTan: "#f3f3f3",
 				almostWhite: "#f5f8f7",
