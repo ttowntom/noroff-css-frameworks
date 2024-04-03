@@ -1066,6 +1066,11 @@ video {
   border-color: rgb(88 174 156 / var(--tw-border-opacity));
 }
 
+.dark\:bg-darkBlue:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(217 28% 15% / var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:w-\[80\%\] {
     width: 80%;
