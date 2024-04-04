@@ -802,6 +802,10 @@ video {
   align-self: flex-start;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
