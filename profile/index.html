@@ -110,7 +110,7 @@
 					<!-- User info container  -->
 					<section id="user-info" class="flex flex-col mt-3">
 						<!-- Profile  -->
-						<div class="flex">
+						<div class="relative flex">
 							<!-- Profile image  -->
 							<img
 								src="../img/ttowntom.png"
@@ -148,6 +148,56 @@
 									</div>
 								</div>
 							</div>
+							<!-- User menu  -->
+							<nav
+								class="absolute top-0 right-0 p-6 pt-9 pe-16 bg-white border dark:bg-slate-900 border-gray-200 dark:border-gray-600 rounded-md shadow-2xl">
+								<button class="absolute right-2 top-2">
+									<i
+										class="fa-solid fa-circle-xmark text-xl text-red-500 dark:text-red-300"></i>
+								</button>
+								<ul class="space-y-3">
+									<li class="flex items-center">
+										<button class="flex items-center group">
+											<i
+												class="fa-solid fa-pen-to-square text-greenPrimary group-hover:text-greenHover dark:group-hover:text-greenHoverLight"></i>
+											<span
+												class="hidden md:inline-block ms-2 text-greenDark dark:text-gray-200 group-hover:text-greenHover dark:group-hover:text-greenHoverLight"
+												>Edit profile</span
+											>
+										</button>
+									</li>
+									<li class="flex items-center">
+										<button class="flex items-center group">
+											<i
+												class="fa-solid fa-gear text-greenPrimary group-hover:text-greenHover dark:group-hover:text-greenHoverLight"></i>
+											<span
+												class="hidden md:inline-block ms-2 text-greenDark dark:text-gray-200 group-hover:text-greenHover dark:group-hover:text-greenHoverLight"
+												>Settings</span
+											>
+										</button>
+									</li>
+									<li class="flex items-center">
+										<button class="flex items-center group">
+											<i
+												class="fa-solid fa-circle-half-stroke text-greenPrimary group-hover:text-greenHover dark:group-hover:text-greenHoverLight"></i>
+											<span
+												class="hidden md:inline-block ms-2 text-greenDark dark:text-gray-200 group-hover:text-greenHover dark:group-hover:text-greenHoverLight"
+												>Toggle dark mode</span
+											>
+										</button>
+									</li>
+									<li class="flex items-center">
+										<a href="/" class="flex items-center group">
+											<i
+												class="fa-solid fa-right-from-bracket text-greenPrimary group-hover:text-greenHover dark:group-hover:text-greenHoverLight"></i>
+											<span
+												class="hidden md:inline-block ms-2 text-greenDark dark:text-gray-200 group-hover:text-greenHover dark:group-hover:text-greenHoverLight"
+												>Log out</span
+											>
+										</a>
+									</li>
+								</ul>
+							</nav>
 						</div>
 						<!-- User navigation  -->
 						<div
@@ -188,7 +238,7 @@
 					<section id="feed" class="mt-6">
 						<!-- Card container  -->
 						<article
-							class="flex flex-col md:-mt-6 p-4 bg-white border dark:bg-slate-800 border-gray-200 dark:border-gray-600 rounded-md shadow-sm">
+							class="relative flex flex-col md:-mt-6 p-4 bg-white border dark:bg-slate-800 border-gray-200 dark:border-gray-600 rounded-md shadow-sm">
 							<!-- Card header  -->
 							<div class="flex justify-between">
 								<div class="flex">
@@ -218,6 +268,36 @@
 									aria-label="Edit this post">
 									<i class="fas fa-ellipsis-v"></i>
 								</button>
+								<!-- User post menu  -->
+								<nav
+									class="absolute top-0 right-0 p-6 pt-9 pe-16 bg-white border dark:bg-slate-900 border-gray-200 dark:border-gray-600 rounded-md shadow-2xl">
+									<button class="absolute right-2 top-2">
+										<i
+											class="fa-solid fa-circle-xmark text-xl text-red-500 dark:text-red-300"></i>
+									</button>
+									<ul class="space-y-3">
+										<li class="flex items-center">
+											<button class="flex items-center group">
+												<i
+													class="fa-solid fa-pen-to-square text-greenPrimary group-hover:text-greenHover dark:group-hover:text-greenHoverLight"></i>
+												<span
+													class="hidden md:inline-block ms-2 text-greenDark dark:text-gray-200 group-hover:text-greenHover dark:group-hover:text-greenHoverLight"
+													>Edit post</span
+												>
+											</button>
+										</li>
+										<li class="flex items-center">
+											<button class="flex items-center group">
+												<i
+													class="fa-solid fa-delete-right text-greenPrimary group-hover:text-greenHover dark:group-hover:text-greenHoverLight"></i>
+												<span
+													class="hidden md:inline-block ms-2 text-greenDark dark:text-gray-200 group-hover:text-greenHover dark:group-hover:text-greenHoverLight"
+													>Delete post</span
+												>
+											</button>
+										</li>
+									</ul>
+								</nav>
 							</div>
 							<!-- Card content  -->
 							<p class="mt-3 dark:text-gray-200">
