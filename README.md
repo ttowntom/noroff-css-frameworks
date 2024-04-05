@@ -1,6 +1,6 @@
 # CSS Frameworks, Tailwind
 
-![image](https://i.postimg.cc/76HwcrXt/Home-feed-Whisp-R.png)
+![image](https://i.postimg.cc/W4gMCQcK/Feed-Whisp-R.png)
 
 A Noroff assignment to create a website using Tailwind.
 
