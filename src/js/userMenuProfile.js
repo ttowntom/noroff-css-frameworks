@@ -3,6 +3,9 @@ const userMenu = document.querySelector("#user-menu-profile");
 const closeBtn = document.querySelector("#user-menu-profile-close-btn");
 
 export function userMenuProfile() {
+	// If no user menu, return
+	if (!userMenu) return;
+
 	openBtn.addEventListener("click", openMenu);
 	closeBtn.addEventListener("click", closeMenu);
 

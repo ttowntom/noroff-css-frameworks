@@ -1,9 +1,28 @@
-const themeToggleBtn = document.querySelector("#theme-toggle");
-const themeToggleTxt = document.querySelector("#theme-toggle-text");
-const themeToggleDarkIcon = document.querySelector("#theme-toggle-dark-icon");
-const themeToggleLightIcon = document.querySelector("#theme-toggle-light-icon");
+const themeToggleBtn = document.querySelector("#theme-toggle") || null;
+const themeToggleTxt = document.querySelector("#theme-toggle-text") || null;
+const themeToggleDarkIcon =
+	document.querySelector("#theme-toggle-dark-icon") || null;
+const themeToggleLightIcon =
+	document.querySelector("#theme-toggle-light-icon") || null;
 
 export function themeSelector() {
+	// If no toggle button, set theme and return
+	if (!themeToggleBtn) {
+		// Check if dark mode is set in local storage or by the browser
+		if (
+			localStorage.getItem("color-theme") === "dark" ||
+			(!("color-theme" in localStorage) &&
+				window.matchMedia("(prefers-color-scheme: dark)").matches)
+		) {
+			// Set dark mode
+			document.documentElement.classList.add("dark");
+		} else {
+			// Set light mode
+			document.documentElement.classList.remove("dark");
+		}
+		return;
+	}
+
 	// Check if dark mode is set in local storage or by the browser
 	if (
 		localStorage.getItem("color-theme") === "dark" ||
