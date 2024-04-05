@@ -8,7 +8,7 @@
 			href="https://kit.fontawesome.com/8d12afa6e5.css"
 			crossorigin="anonymous" />
 		<link rel="stylesheet" href="../css/style.css" />
-		<!-- <script src="../src/js/index.js" defer></script> -->
+		<script src="../src/js/index.js" type="module"></script>
 		<title>Profile | WhispR</title>
 	</head>
 	<body class="bg-white dark:bg-darkBlue font-opensans">
@@ -124,6 +124,7 @@
 									<h1 class="text-3xl text-greenPrimary font-bold">tTownTom</h1>
 									<!-- Edit profile button  -->
 									<button
+										id="user-menu-profile-button"
 										class="self-start pe-4 hover:text-greenPrimary"
 										aria-label="Edit this post">
 										<i class="fas fa-ellipsis-v"></i>
@@ -150,10 +151,13 @@
 							</div>
 							<!-- User menu  -->
 							<nav
-								class="absolute top-0 right-0 p-6 pt-9 pe-16 bg-white border dark:bg-slate-900 border-gray-200 dark:border-gray-600 rounded-md shadow-2xl">
-								<button class="absolute right-2 top-2">
+								id="user-menu-profile"
+								class="hidden absolute top-0 right-0 p-6 pt-9 pe-16 bg-white border dark:bg-slate-900 border-gray-200 dark:border-gray-600 rounded-md shadow-2xl">
+								<button
+									id="user-menu-profile-close-btn"
+									class="absolute right-2 top-2">
 									<i
-										class="fa-solid fa-circle-xmark text-xl text-red-500 dark:text-red-300"></i>
+										class="fa-solid fa-circle-xmark text-xl text-red-500 dark:text-red-300 hover:text-red-800 dark:hover:text-red-500"></i>
 								</button>
 								<ul class="space-y-3">
 									<li class="flex items-center">
@@ -177,13 +181,18 @@
 										</button>
 									</li>
 									<li class="flex items-center">
-										<button class="flex items-center group">
+										<button id="theme-toggle" class="flex items-center group">
+											<!-- Dark icon  -->
 											<i
-												class="fa-solid fa-circle-half-stroke text-greenPrimary group-hover:text-greenHover dark:group-hover:text-greenHoverLight"></i>
+												id="theme-toggle-dark-icon"
+												class="fa-solid fa-moon-stars hidden text-greenPrimary group-hover:text-greenHover dark:group-hover:text-greenHoverLight"></i>
+											<i
+												id="theme-toggle-light-icon"
+												class="fa-solid fa-sun hidden text-greenPrimary group-hover:text-greenHover dark:group-hover:text-greenHoverLight"></i>
+
 											<span
-												class="ms-2 text-greenDark dark:text-gray-200 group-hover:text-greenHover dark:group-hover:text-greenHoverLight"
-												>Toggle dark mode</span
-											>
+												id="theme-toggle-text"
+												class="ms-2 text-greenDark dark:text-gray-200 group-hover:text-greenHover dark:group-hover:text-greenHoverLight"></span>
 										</button>
 									</li>
 									<li class="flex items-center">
@@ -264,16 +273,20 @@
 								</div>
 								<!-- Post edit button  -->
 								<button
+									id="user-menu-post-button"
 									class="self-start text-gray-400 hover:text-greenPrimary"
 									aria-label="Edit this post">
 									<i class="fas fa-ellipsis-v"></i>
 								</button>
 								<!-- User post menu  -->
 								<nav
-									class="absolute top-0 right-0 p-6 pt-9 pe-16 bg-white border dark:bg-slate-900 border-gray-200 dark:border-gray-600 rounded-md shadow-2xl">
-									<button class="absolute right-2 top-2">
+									id="user-menu-post"
+									class="hidden absolute top-0 right-0 p-6 pt-9 pe-16 bg-white border dark:bg-slate-900 border-gray-200 dark:border-gray-600 rounded-md shadow-2xl">
+									<button
+										id="user-menu-post-close-btn"
+										class="absolute right-2 top-2">
 										<i
-											class="fa-solid fa-circle-xmark text-xl text-red-500 dark:text-red-300"></i>
+											class="fa-solid fa-circle-xmark text-xl text-red-500 dark:text-red-300 hover:text-red-800 dark:hover:text-red-500"></i>
 									</button>
 									<ul class="space-y-3">
 										<li class="flex items-center">
