@@ -19,6 +19,9 @@ export function userMenuProfile() {
 }
 
 export function closeUserMenuProfile() {
+	// If no user menu, return
+	if (!userMenu) return;
+
 	// Clicks outside of the user menu will close it
 	document.addEventListener("click", function (event) {
 		if (!userMenu.contains(event.target) && !openBtn.contains(event.target)) {
