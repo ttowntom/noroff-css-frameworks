@@ -1,44 +1,16 @@
-const themeToggleBtn = document.querySelector("#theme-toggle");
-const themeToggleDarkIcon = document.querySelector("#theme-toggle-dark-icon");
-const themeToggleLightIcon = document.querySelector("#theme-toggle-light-icon");
+import { themeSelector } from "./themeSelector.js";
+import { userMenuProfile, closeUserMenuProfile } from "./userMenuProfile.js";
+import { userMenuPost, closeUserMenuPost } from "./userMenuPost.js";
 
-if (
-	localStorage.getItem("color-theme") === "dark" ||
-	(!("color-theme" in localStorage) &&
-		window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-	// Show light icon
-	themeToggleLightIcon.classList.remove("hidden");
-} else {
-	themeToggleDarkIcon.classList.remove("hidden");
-}
+// Call themeSelector function
+themeSelector();
 
-// Listen for toggle button click
-themeToggleBtn.addEventListener("click", toggleMode);
-function toggleMode() {
-	// Toggle icon
-	themeToggleDarkIcon.classList.toggle("hidden");
-	themeToggleLightIcon.classList.toggle("hidden");
+// Call userMenuProfile function
+userMenuProfile();
+// Close user menu when clicking outside of it
+closeUserMenuProfile();
 
-	// If is set in local storage
-	if (localStorage.getItem("color-theme")) {
-		// If light, make dark and save in local storage
-		if (localStorage.getItem("color-theme") === "light") {
-			document.documentElement.classList.add("dark");
-			localStorage.setItem("color-theme", "dark");
-		} else {
-			// If dark, make light and save in local storage
-			document.documentElement.classList.remove("dark");
-			localStorage.setItem("color-theme", "light");
-		}
-	} else {
-		// If not set in local storage
-		if (document.documentElement.classList.contains("dark")) {
-			document.documentElement.classList.remove("dark");
-			localStorage.setItem("color-theme", "light");
-		} else {
-			document.documentElement.classList.add("dark");
-			localStorage.setItem("color-theme", "dark");
-		}
-	}
-}
+// Call userMenuPost function
+userMenuPost();
+// Close user menu when clicking outside of it
+closeUserMenuPost();
