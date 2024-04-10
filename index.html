@@ -37,12 +37,14 @@
 					<h2 class="mt-10 text-greenPrimary font-bold text-3xl">
 						Log in to WhispR
 					</h2>
-					<form class="w-full my-6 md:my-10">
+					<form action="/profile" class="w-full my-6 md:my-10">
 						<div
 							class="w-full flex items-center my-2 p-2 text-darkBlue bg-white border border-gray-200 rounded-md group focus-within:border-greenPrimary">
 							<i class="fa-solid fa-envelope text-gray-400"></i>
 							<input
 								type="email"
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+								title="Please enter a valid email address"
 								class="pl-2 w-full border-none focus:outline-none"
 								placeholder="Email" />
 						</div>
@@ -52,18 +54,21 @@
 
 							<input
 								type="password"
+								pattern=".{8,}"
+								title="Password must be at least 8 characters long"
 								class="pl-2 w-full border-none focus:outline-none"
 								placeholder="Password" />
 						</div>
+
+						<a href="#" class="text-gray-500 hover:text-gray-800 underline"
+							>Forgot your password?</a
+						>
+						<button
+							type="submit"
+							class="w-full my-10 py-3 px-5 font-sans bg-greenPrimary shadow-md hover:shadow-xl hover:bg-almostWhite text-almostWhite hover:text-greenPrimary border hover:border-greenPrimary rounded-full uppercase">
+							Log in
+						</button>
 					</form>
-					<a href="#" class="text-gray-500 hover:text-gray-800 underline"
-						>Forgot your password?</a
-					>
-					<a
-						href="/profile"
-						class="w-full my-10 py-3 px-5 font-sans bg-greenPrimary shadow-md hover:shadow-xl hover:bg-almostWhite text-almostWhite hover:text-greenPrimary border hover:border-greenPrimary rounded-full uppercase">
-						Log in
-					</a>
 				</div>
 			</div>
 		</div>
